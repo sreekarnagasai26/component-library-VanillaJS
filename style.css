@@ -1,0 +1,9 @@
+div{
+    color: green;
+    text-decoration: underline;
+}
+
+li{
+    list-style-type: square;
+    list-style-position: inside;
+}

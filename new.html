@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnings</title>
+    <style>
+     #example-id { color: green; }   
+     #aDiv {
+    color: red;
+ }
+    </style>
+</head>
+<body>
+    <ul role="tree">
+        <li role="treeitem">
+           Part 1
+        <ul>
+        <li role="treeitem">Chapter 1</li>
+        <li role="treeitem">Chapter 2</li>
+        <li role="treeitem">Chapter 3</li>
+        </ul>
+        </li>
+        <li role="treeitem">
+           Part 2
+        <ul>
+        <li role="treeitem">Chapter 4</li>
+        <li role="treeitem">Chapter 5</li>
+        <li role="treeitem">Chapter 6</li>
+        </ul>
+        </li>
+        <li role="treeitem">
+           Part 3
+        <ul>
+        <li role="treeitem">Chapter 7</li>
+        <li role="treeitem">Chapter 8</li>
+        <li role="treeitem">Chapter 9</li>
+        </ul>
+        </li>
+        </ul>
+    <p>Lorem ipsum...</p>
+ <hr role="separator">
+ <p>Lorem ipsum...</p>
+ <div
+  role="slider"
+  aria-valuemax="100"
+  aria-valuemin="0"
+  aria-valuenow="25">
+    <div class="sliderhandle">Hello</div>
+ </div>
+ <input
+  role="spinbutton"
+  aria-valuemax="100"
+  aria-valuemin="0"
+  aria-valuenow="25"
+  type="number"
+  value="25">
+
+  <p>
+    <span role="timer">60</span> seconds remaining.
+   </p>
+
+    <div role="application">
+        <h1>Calculator</h1>
+        <input id="num1" type="text"> + <input id="num2" type="text"> =
+        <span id="result"></span>
+        </div>
+    <pre>
+        <code>
+           x = 42
+           if x == 42:
+               print "x is …          
+       </code>
+        </pre>
+
+        <button tabindex="1">This button will not be reachable by tab</button>
+    <svg class="attention" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000" >
+    <path id="attention"
+    d="m571,767l0,-106q0,-8,-5,-13t-12,-5l-108,0q-7,0,-12,5t-5,13l0,106q0,8,5,13t12,6l108,0q7,0,12,-6t5
+    ,-13Zm-1,-208l10,-257q0,-6,-5,-10q-7,-6,-14,-6l-122,0q-7,0,-14,6q-5,4,-5,12l9,255q0,5,6,9t13,3l103,
+    0q8,0,13,-3t6,-9Zm-7,-522l428,786q20,35,-1,70q-10,17,-26,26t-35,10l-858,0q-18,0,-35,-10t-26,-26q-21
+    ,-35,-1,-70l429,-786q9,-17,26,-27t36,-10t36,10t27,27Z" />
+    </svg
+    <form id="form1" name="form1" oninput="out1.value = parseInt(in1.value, 10) + parseInt(in2.value,
+ 10)">
+  <fieldset>
+    <legend>Output Example</legend>
+      <input type="number" id="in1" name="in1" value="0" tabindex="1">
+    <br/>
+    +
+    <input type="number" id="in2" name="in2" value="0">
+  </fieldset>
+ </form>
+ <progress value="22" max="100"></progress>
+
+ <select name="">
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+    <option value="4">Four</option>
+    </select>
+ <!--[for] attribute enables out1 to display calculations for in1 and in2.-->
+ <!--[form] attribute designates form1 as the form owner of out1 even if it isn't a descendant.-->
+ <output name="out1" for="in1 in2" form="form1">0</output>
+    <form action="/login" method="POST">
+   
+        <label for="username">Username:</label>
+        <input id="username" type="text" name="username" />
+        <label for="pass">Password:</label>
+        <input id="pass" type="password" name="pass" />
+        <input type="submit" name="submit" />
+     </form>
+
+    <section>
+        <!-- Each individual blog post is an <article> -->
+        <article>
+            <header>
+                <h1>Blog Post</h1>
+                <time datetime="2016-03-13">13th March 2016</time>
+            </header>
+            <p>The article element represents a self contained article or document.</p>
+            <p>The section element represents a grouping of content.</p>
+            <section>
+                <h2>Comments <small>relating to "Blog Post"</small></h2>
+                <!-- Related comment is also a self-contained article -->
+                <article id="user-comment-1">
+                    <p>Excellent!</p>
+                    <footer><p>...</p><time>...</time></footer>
+                </article>
+            </section>
+        </article>
+        <!-- ./repeat: <article> -->
+     </section>
+    <div>Hello</div>
+    <em>Italicized Text Here</em>
+    <i>Italicized Text Here</i>
+    <ins>New Text</ins>
+    <del>Deleted Text</del>
+    <s>Struck-through text here</s>
+    <sup>superscript here</sup>
+    <sub>subscript here</sub>
+    <a href="http://google.com/" rel="noopener" target="_blank">Link to example.com</a>
+    <a href="#" onclick="myFunction(); return false;">Run Code</a>
+    <a href="mailto:sreekarnagasai@gmail.com">Send email</a>
+
+    <div id="sampletext"> ... </div>
+    <div id="sample-text"> ... </div>
+    <div id="sample_text"> ... </div>
+    <div id="sample:text"> ... </div>
+    <div id="sample.text"> ... </div>
+    <div id="example-id">hello</div>
+    <div id="aDiv">a</div>
+    <div id="aDiv">b</div>
+    <script>
+        document.write("Hello, world!")
+    </script>
+    <link rel="preconnect" href="URL">
+    <link rel="dns-prefetch" href="URL">
+    <link rel="prefetch" href="URL">
+    <link rel="stylesheet" href="test.css" media="print"> //specific type of devices
+    <link rel="prev" href="http://stackoverflow.com/documentation/java/topics"> //ur current doc and linked resoure
+    <link rel="next" href="http://stackoverflow.com/documentation/css/topics">
+    <img sizes="(min-width: 1200px) 580px,
+    (min-width: 640px) 48vw,
+    98vw"
+    srcset="img/hello-300.jpg 300w,
+    img/hello-600.jpg 600w,
+    img/hello-900.jpg 900w,
+    img/hello-1200.jpg 1200w"
+    src="img/hello-900.jpg" alt="hello">
+    <img src="http://jaced.com/blogpix/2007/trisquarecircle/002.gif" usemap="#shapes">
+    <map name="shapes">
+        <area shape="polygon" coords="79,6,5,134,153,134">
+
+        <area shape="circle" coords="397,71,65">
+    </map>
+
+    <input type="checkbox">Hello
+ <input type="radio">Page
+ <input checked="checked">
+ <input checked="ChEcKeD">
+ <input type="submit" value="Submit">
+ <label>
+    <input type="radio" name="color" value="#F00">
+    Red
+   </label>
+   <input type="text" name="favcolor" value="hello">
+   <form action="upload_file.php" method="post" enctype="multipart/form-data">
+    Select file to upload:
+    <input type="file" name="fileSubmission" id="fileSubmission">
+    <input type="submit" value="Upload your file" name="submit">
+ </form>
+  
+ <form>
+    <label>E-mail: <label>
+    <input type="email" name="email">
+    <input type="datetime-local" />
+    </form>
+   
+ <button type="button" onclick="alert('hello world!')">Click Me</button>
+   <link rel="alternate" type="application/atom+xml" href="http://example.com/feed.xml" /> //know to apply css to page
+
+   <fieldset>
+    <p><label>Meeting time: <input type=datetime name="meeting.start"></label>
+    </fieldset>
+    <input type="text" name="lastname" value="Mouse">
+    <form action="action.php" method="get">
+        <form action="action.php" method="post">
+            <nav role="navigation">
+                <ul>
+                    <li><a href="https://google.com">Google</a></li>
+                    <li><a href="https://www.yahoo.com">Yahoo!</a></li>
+                    <li><a href="https://www.bing.com">Bing</a></li>
+                </ul>
+             </nav>
+
+            <nav>
+                <a href="https://google.com">Google</a>
+                <a href="https://www.yahoo.com">Yahoo!</a>
+                <a href="https://www.bing.com">Bing</a>
+             </nav>
+</body>
+</html>
